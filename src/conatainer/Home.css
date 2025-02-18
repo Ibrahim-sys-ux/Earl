@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 .home {
@@ -78,3 +79,85 @@
     padding: 12px 28px;
   }
 }
+=======
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+.home {
+  height: 100vh;
+  background: url("1.png") no-repeat center center/cover;
+  display: flex;
+  align-items: flex-end; /* Moves content towards the bottom */
+  justify-content: flex-start; /* Aligns content to the left */
+  padding: 0 10%;
+  padding-bottom: 10%; /* Moves content slightly up from bottom */
+  color: white;
+  position: relative;
+}
+
+/* CONTENT */
+.home-content {
+  max-width: 1101px;
+}
+
+.home-content h1 {
+  font-size: 3rem;
+  font-family: 'Great Vibes', cursive;
+  margin-bottom: 10px;
+  color: #ff7b00;
+}
+
+.home-content h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.home-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* BOOK NOW BUTTON */
+.book-now {
+  padding: 14px 32px;
+  font-size: 18px;
+  border: 2px solid #ff7b00;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.book-now:hover {
+  background: #ff7b00;
+  color: black;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+  .home {
+    justify-content: center;
+    align-items: center; /* Center content on mobile */
+    padding: 0 5%;
+    text-align: center;
+  }
+
+  .home-content h1 {
+    font-size: 55px;
+  }
+
+  .home-content h2 {
+    font-size: 28px;
+  }
+
+  .home-content p {
+    font-size: 16px;
+  }
+
+  .book-now {
+    font-size: 16px;
+    padding: 12px 28px;
+  }
+}
+>>>>>>> c774365 (Initial upload of folder and files)

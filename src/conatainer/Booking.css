@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap");
 
 .booking-container {
@@ -163,4 +164,171 @@
   .btn-find:hover {
     background: #ff9900;
   }
+=======
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap");
+
+.booking-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0d0f14;
+  padding: 60px;
+  height: 100vh; /* Full height */
+  color: white;
+}
+
+/* Left Side Image */
+.booking-image {
+  flex: 1;
+  max-width: 50%;
+}
+
+.booking-image img {
+  width: 60%;
+  height: 650px;
+  margin-left: 190px;
+  border-radius: 10px;
+}
+
+/* Right Side Content */
+.booking-content {
+  flex: 1;
+  max-width: 45%;
+  padding-left: 50px;
+}
+
+.booking-title {
+  font-family: "Great Vibes", cursive;
+  font-size: 22px;
+  color: #ff7b00;
+}
+
+.booking-heading {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.highlight {
+  color: #ff7b00;
+}
+
+.booking-text {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.booking-buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.btn-outline {
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  background:whitesmoke transparent;
+  color: white;
+}
+
+.btn-filled {
+  background: #ff7b00;
+  color: black;
+  font-size: medium;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.booking-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    border-radius: 10px;
+    width: 600px; /* Exact width */
+    color: white;
+  }
+  
+  /* Left Side */
+  .booking-text {
+    flex: 1;
+  }
+  
+  .box-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .box-subtitle {
+    color: #ff7b00;
+    font-weight: bold;
+  }
+  
+  .box-text {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  /* Right Side */
+  .booking-fields {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .input-box {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    padding: 10px;
+  }
+  
+  /* Remove Borders from Inputs */
+  .input-box input,
+  .input-box select {
+    background: transparent;
+    border: none; /* No border */
+    outline: none; /* Remove outline */
+    color: white;
+    font-size: 14px;
+    flex: 1;
+  }
+  
+  /* Icons */
+  .input-box i {
+    color: white;
+    margin-right: 10px;
+  }
+  
+  /* Find Table Button */
+  .btn-find {
+    width: 100%;
+    background: #ff7b00;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .btn-find:hover {
+    background: #ff9900;
+  }
+>>>>>>> c774365 (Initial upload of folder and files)
   
