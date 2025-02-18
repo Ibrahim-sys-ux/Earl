@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;700&display=swap');
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0d1117;
+  color: white;
+  padding: 100px 10%;
+}
+
+.about-content {
+  max-width: 600px;
+}
+
+.section-title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 24px;
+  color: #ff7b00;
+  margin-bottom: 10px;
+}
+
+.about-heading {
+  font-size: 42px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 15px;
+}
+
+.about-heading span {
+  color: #ff7b00;
+}
+
+.about-text {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.learn-more {
+  padding: 12px 24px;
+  border: 2px solid #ff7b00;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.learn-more:hover {
+  background: #ff7b00;
+  color: black;
+}
+
+.about-image img {
+  width: 380px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 5%;
+  }
+
+  .about-content {
+    max-width: 100%;
+  }
+
+  .about-image {
+    margin-top: 30px;
+  }
+
+  .about-image img {
+    width: 100%;
+    max-width: 350px;
+  }
+}

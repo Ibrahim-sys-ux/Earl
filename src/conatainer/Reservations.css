@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap');
+
+.reservation-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.reservation-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+/* Blackish Overlay for Dark Effect */
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+.reservation-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 50px;
+  color: white;
+  position: relative;
+}
+
+/* Play Button Properly Positioned Above Left Text */
+.play-button {
+  position: absolute;
+  left: 3%;
+  top: 40%;
+  width: 55px;
+  height: 55px;
+  background: none;
+  border: 2px solid #ff7b00;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #ff7b00;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.play-button:hover {
+  background: #ff7b00;
+  color: white;
+
+}
+
+/* Left Side Text */
+.left-text {
+  max-width: 40%;
+  font-size: 24px;
+  font-weight: 600;
+  position: absolute;
+  left: 6%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Reservation Box - Fully Utilized with Proper Gaps */
+.reservation-box {
+  background: rgba(10, 15, 30, 0.9);
+  padding: 30px;
+  border-radius: 8px;
+  width: 480px; /* Adjusted for better spacing */
+  height: 530px; /* Matching design */
+  position: absolute;
+  right: 5%;
+  top: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures proper spacing */
+}
+
+/* Title Styling */
+.reservation-title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 28px; /* Slightly bigger for impact */
+  color: #ff7b00;
+  text-align: center;
+}
+
+/* Highlighted Text */
+.reservation-highlight {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Italicized text */
+.italic-text {
+  font-style: italic;
+  color: #ff7b00;
+}
+
+/* Description - Slightly Larger and More Readable */
+.reservation-description {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Signature Title */
+.signature-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff7b00;
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* Cocktail List - Centered */
+.cocktail-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.cocktail-list li {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Expandable Sections - Proper Spacing & Design */
+.expandable-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.expand-icon {
+  font-size: 18px;
+  color: #ff7b00;
+}
+
+.expand-content {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 5px;
+}
+
+/* Button Styled & Positioned */
+.reservation-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff7b00;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.reservation-button:hover {
+  background-color: #d66800;
+}

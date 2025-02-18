@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  background: rgba(0, 0, 0, 1);
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+  /* position: fixed; */
+}
+
+/* LOGO */
+.logo {
+  font-family: 'Great Vibes', cursive;
+  font-size: 50px;
+  color: #ff7b00;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+/* NAV LINKS (DESKTOP) */
+.nav-links {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ff7b00;
+}
+
+/* BOOK BUTTON */
+.book-btn {
+  padding: 10px 20px;
+  border: 2px solid #ff7b00;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.book-btn:hover {
+  background: #ff7b00;
+  color: black;
+}
+
+/* HAMBURGER MENU */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-right: 20px;
+  z-index: 1500;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background: white;
+  margin: 5px 0;
+  transition: transform 0.4s ease, opacity 0.3s ease;
+}
+
+/* Animation for open menu */
+.menu-toggle.open .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.open .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* RESPONSIVE NAVIGATION */
+@media screen and (max-width: 895px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
+  /* NAVIGATION MENU */
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 90px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 90px);
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    transition: left 0.5s ease-in-out;
+  }
+
+  /* SHOW NAV LINKS WHEN ACTIVE */
+  .nav-links.active {
+    left: 0;
+  }
+
+  .nav-links a {
+    padding: 20px 0;
+    font-size: 18px;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  .nav-links a:hover {
+    transform: scale(1.1);
+    color: #ff7b00;
+  }
+
+  /* SHOW HAMBURGER MENU */
+  .menu-toggle {
+    display: flex;
+  }
+
+  /* HIDE BOOK BUTTON */
+  .book-btn {
+    display: none;
+  }
+}

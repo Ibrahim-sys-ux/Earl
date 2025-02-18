@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Poppins:wght@300;400;600&display=swap');
+.n{
+   background: #0c0f12; 
+}
+.feedback-container {
+  display: flex;
+  align-items: center;
+  background: #0c0f12;
+  padding: 60px;
+  color: white;
+  margin-left: 100px;
+}
+
+.feedback-image img {
+  width: 600px;
+  border-radius: 10px;
+  border-radius: 9999px;
+}
+
+.feedback-content {
+  margin-left: 50px;
+  max-width: 500px;
+}
+
+.client-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-style: italic;
+  color: #ff7b00;
+}
+
+.feedback-heading {
+  font-size: 36px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+.feedback-heading span {
+  color: #ffae00;
+}
+
+.feedback-text {
+  font-size: 16px;
+  color: #aaa;
+}
+
+.client-info {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.client-info img {
+  width: 70px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.client-info h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.client-info p {
+  font-size: 14px;
+  color: #bbb;
+}
+
+.client-feedback {
+  font-size: 16px;
+  margin-top: 15px;
+  color: #ddd;
+}
+
+.navigation {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.navigation button {
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #ffae00;
+  cursor: pointer;
+}
+
+.navigation button:hover {
+  color: #d4973b;
+}
