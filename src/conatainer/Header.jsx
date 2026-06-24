@@ -38,7 +38,6 @@ const Header = () => {
 };
 
 export default Header;
-=======
 import React, { useState } from "react";
 import "./header.css";
 
@@ -78,4 +77,4 @@ const Header = () => {
 };
 
 export default Header;
->>>>>>> c774365 (Initial upload of folder and files)
+
